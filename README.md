@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Resume - shrutika patil</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f0f2f5;
+    }
+    .resume-container {
+      display: flex;
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .sidebar {
+      width: 30%;
+      background-color: #102c44;
+      color: white;
+      padding: 30px 20px;
+    }
+    .sidebar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 15px;
+      display: block;
+    }
+    .sidebar h2 {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+    .sidebar p {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .section-title {
+      font-size: 14px;
+      margin-top: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #ffffff33;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    .sidebar ul {
+      padding-left: 0;
+      list-style: none;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+    .main {
+      width: 70%;
+      padding: 30px 40px;
+      color: #333;
+    }
+    .main h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+    .main h3 {
+      color: #00695c;
+      margin-bottom: 10px;
+    }
+    .main p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .job {
+      margin-bottom: 20px;
+    }
+    .job h4 {
+      margin: 5px 0;
+    }
+    .reference {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .reference div {
+      width: 48%;
+    }
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #ccc;
+    }
+    .print-share {
+      text-align: center;
+      margin: 20px;
+    }
+    .print-share button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .print-button { background: #00695c; }
+    .whatsapp { background: #25D366; }
+    .twitter { background: #1DA1F2; }
+    .instagram { background: #e1306c; }
+    .linkedin { background: #0a66c2; }
+
+    .uploaded-resume {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .resume-button {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .resume-button:hover {
+      background-color: #45a049;
+    }
+
+    @media print {
+      .print-share, .uploaded-resume {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Share & Print Buttons -->
+<div class="print-share">
+  <button class="print-button" onclick="window.print()">Print Resume</button>
+  <button class="whatsapp" onclick="shareWhatsApp()">Share on WhatsApp</button>
+  <button class="twitter" onclick="shareTwitter()">Share on Twitter</button>
+  <button class="instagram" onclick="copyLink()">Copy Link for Instagram</button>
+  <button class="linkedin" onclick="shareLinkedIn()">Share on LinkedIn</button>
+</div>
+
+<!-- Resume Layout -->
+<div class="resume-container">
+  <div class="sidebar">
+    <img src="shrutikapatil.jpeg" alt="Photo of shrutika patil"/>
+    <h2>shrutika Ravindra Patil</h2>
+    <p>Student</p>
+
+    <div class="section-title">CONTACT</div>
+    <ul>
+      <li> 7249337264</li>
+      <li> shrutika04patil@gmail.com</li>
+      <li> shirpur, deoli, wardha</li>
+    </ul>
+
+    <div class="section-title">SKILLS</div>
+    <ul>
+      <li>Project Management</li>
+      <li>Ability to work in team</li>
+      <li>Teamwork</li>
+      <li>Time Management</li>
+    </ul>
+
+    <div class="section-title">LANGUAGES</div>
+    <ul>
+      <li>English</li>
+      <li>Hindi</li>
+      <li>Marathi</li>
+    </ul>
+
+    <div class="section-title">REFERENCE</div>
+    <ul>
+      <li>📞 7249337264</li>
+      <li>✉️ shrutika04patil@gmail.com</li>
+      <li>🔗 <a href="https://yourwebsite.com/gauriii.html" style="color:white;" target="_blank">Online Resume</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <h1>shrutika <span style="color:#00695c;">Patil</span></h1>
+    <h3>Student (P.R.Pote College Of Engineering Amravati)</h3>
+
+    <h3>CAREER OBJECTIVE</h3>
+    <p>I aim to work in a challenging environment where I can utilize my knowledge and skills to become a valuable asset to the organization.</p>
+
+    <h3>QUALIFICATION</h3>
+    <ul>
+      <li><strong>B-Tech (Electronics and Telecommunication)</strong> (2023-2027)<br>
+      P.R. Pote College of Engineering and Management, Amravati</li>
+      <li>1st year complete | CGPA: 8.00</li>
+      <li>2nd year pursuing</li>
+      <li><strong>HSC (2022)</strong> - Janta Junior College,Deoli (73%)</li>
+      <li><strong>SSC (2020)</strong> - Janta High School, deoli (87%)</li>
+    </ul>
+
+    <h3>EXAMINATION</h3>
+    <ul>
+      <li>JEE Score: -</li>
+      <li>CET Score: 39</li>
+    </ul>
+
+    <h3>CERTIFICATION / INTERNSHIPS</h3>
+    <ul>
+      <li><a href="https://www.credly.com/go/kZsdM6eg" target="_blank">Eduskill - AWS Virtual Internship</a></li>
+      <li><a href="https://verify.skilljar.com/c/ocqfsw66ta8x" target="_blank">Zscaler Internship</a></li>
+      <li>Eduskill - AI/ML Virtual Internship</li>
+      <li>TCS-iON</li>
+      <li>Structural Analysis with STAAD.Pro Virtual Internship</li>
+      <li>Simplilearn - Data Analytics</li>
+    </ul>
+
+    <h3>PROJECT</h3>
+    <ul>
+      <li>Smart Plant Watering System using IoT</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Uploaded Resume Button -->
+<div class="uploaded-resume">
+  <a href="shrutika_Resume.pdf" download target="_blank">
+    <button class="resume-button">📄 View/Download Uploaded Resume</button>
+  </a>
+</div>
+
+<!-- JavaScript for Sharing -->
+<script>
+  const resumeURL = window.location.href;
+
+  function shareWhatsApp() {
+    const url = `https://wa.me/?text=Check%20out%20this%20resume:%20${encodeURIComponent(resumeURL)}`;
+    window.open(url, '_blank');
+  }
+
+  function shareTwitter() {
+    const url = `https://twitter.com/intent/tweet?text=Check%20out%20this%20resume&url=${encodeURIComponent(resumeURL)}`;
+    window.open(url, '_blank');
+  }
+
+  function shareLinkedIn() {
+    const url = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(resumeURL)}`;
+    window.open(url, '_blank');
+  }
+
+  function copyLink() {
+    navigator.clipboard.writeText(resumeURL).then(() => {
+      alert("✅ Link copied! You can paste it anywhere.");
+    });
+  }
+</script>
+
+</body>
+</html>
